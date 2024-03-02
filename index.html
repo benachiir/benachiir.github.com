@@ -243,11 +243,13 @@
 
                             </div>
                         </div>
+
+
                         <div x-show.transition.in="step === 2">
                             <div class="py-4">
 
 
-                                <div class="-mx-3 md:flex">
+                                <div class="-mx-3 md:flex relative">
                                     <div class="md:w-full px-3 mb-6 md:mb-0">
                                         <label
                                             class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
@@ -276,11 +278,9 @@
 
                                                 <div id="dropdown-menu"
                                                     class="hidden absolute right-0 mt-2 w-full h-36 overflow-auto rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 p-1 space-y-1 z-10">
-                                                    <!-- Search input -->
                                                     <input id="search-input"
                                                         class="block w-full px-4 py-2 text-gray-800 border rounded-md  border-gray-300 focus:outline-none"
                                                         type="text" placeholder="Search items" autocomplete="off">
-                                                    <!-- Dropdown content goes here -->
                                                     <a href="#"
                                                         class="block px-4 py-2 text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer rounded-md">BAC
                                                         MEI1234</a>
@@ -295,7 +295,7 @@
                                                     <a href="#"
                                                         class="block px-4 py-2 text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer rounded-md">BTS MAI</a>
                                                     <a href="#"
-                                                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer rounded-md">BTS CRCI/a>
+                                                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer rounded-md">BTS CRCI</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -324,6 +324,8 @@
                                     </div>
                                 </div>
                             </div>
+
+                            
 
                         </div>
 
@@ -609,7 +611,7 @@
             }
 
             // Set initial state
-            toggleDropdown();
+            //toggleDropdown();
 
             dropdownButton.addEventListener('click', () => {
                 toggleDropdown();
